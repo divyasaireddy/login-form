@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Input Tags</title>
+</head>
+
+<body>
+    <form action="">
+        <pre>
+            <Fieldset>
+                <legend>Registration Form</legend>
+
+                <label for="Name">FullName:</label> <input type="text" id="Name" placeholder="FullName">
+
+               <label for="Email">Email   :</label> <input type="Email" id="Email" placeholder="Email">
+
+               <label for="Password">Password:</label> <input type="Password" id="Password" placeholder="Password">
+            </Fieldset>
+
+            <fieldset>
+                <legend>Job Details</legend>
+
+                <label for="Role">Position Applied For:</label> <input type="text" id="Role" Value="Software Devloper" required>
+
+                <label for="Exp">Years of Experience:</label> <input type="number" id="Exp" required>
+
+                <label for="Skills">Technical skills:</label> <input type="text" id="Skills" required>
+
+                <label for="Preffered location">Preffered location:</label> <input list="Work Type" name="WorkType" required>         
+                <datalist id="Work Type">
+                <option value="Hybrid"> Hybrid </option>
+                <option value="Remote"> Remote </option>
+                <option value="Office/Remote"> Office/Remote </option> </datalist>
+                <label for="Resume">Upload resume:</label> <input type="file" id="Resume">
+            </fieldset>
+           </pre>
+           <input type="submit" value="Submit Application">
+    </form>
+</body>
+
+</html>
